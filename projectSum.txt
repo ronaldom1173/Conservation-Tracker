@@ -1,0 +1,27 @@
+Animal Conservation Status Tracker 
+Use the IUCN Red List API and GBIF (Global Biodiversity Information Facility) data. Track which species are improving vs. declining, what regions are biodiversity 
+hotspots vs. losing the most species, and whether conservation spending correlates with outcomes. This one tells a meaningful story.
+
+Data sources (all free)
+
+    IUCN Red List API — conservation status (Least Concern → Extinct), population trends, threats, habitat info. Requires a free API token (takes a day or two to get approved).
+    GBIF (Global Biodiversity Information Facility) — species occurrence records, geographic distribution. Massive dataset, no auth needed for basic use.
+    Our World in Data — has clean CSVs on biodiversity, protected area coverage, conservation spending by country.
+    World Bank Open Data — country-level GDP, land use, protected area %, for cross-referencing
+
+questions to answer
+
+Which taxonomic groups (mammals, birds, amphibians, reptiles, fish, insects) are most threatened, and how has that shifted over the last 20 years?
+Where are the biodiversity hotspots vs. the "extinction hotspots"?
+Does a country's protected-area coverage or conservation spending actually correlate with better species outcomes?
+Which species have improved status (success stories like the bald eagle, humpback whale) — what do they have in common?
+Are there species that moved from "Least Concern" straight to "Endangered" recently — i.e., rapid decliners that deserve attention?
+
+
+Python (pandas, requests) for pulling and cleaning data
+SQL (SQLite is fine) to store and query the combined dataset — shows you can model data
+Plotly or Folium for interactive maps; Plotly/Seaborn for charts
+Streamlit or Tableau Public for the final dashboard
+GitHub for the repo with a clean README
+
+

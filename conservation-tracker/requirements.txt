@@ -1,0 +1,25 @@
+# Data fetching
+requests
+
+# Data manipulation
+pandas
+numpy
+
+# Database
+# SQLite is built into Python — no install needed
+
+# Visualization
+plotly
+seaborn
+matplotlib
+folium
+
+# Dashboard
+streamlit
+
+# Jupyter
+jupyterlab
+ipykernel
+
+# Install all with pre-built wheels (no compilation needed):
+# pip install -r requirements.txt --only-binary=:all:
